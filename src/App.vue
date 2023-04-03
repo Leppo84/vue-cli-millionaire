@@ -1,28 +1,46 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header>
+      <!-- <h1>
+        Who wants to be a millionaire?
+      </h1> -->
+      <img class="logo" alt="Millionaire logo" src="./assets/logo.png">
+    </header>
+    <ContainerMain msg=""/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ContainerMain from './components/ContainerMain.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ContainerMain
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  *{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+  #app {
+    background-color: #14178b;
+    min-height: 100vh;
+
+  }
+  
+  header {
+    text-align: center;
+    img.logo {
+      width: 33%;
+      margin-top: 5vh;
+      margin-bottom: 3vh;
+    }
+  }
 </style>
