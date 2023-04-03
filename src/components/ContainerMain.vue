@@ -58,7 +58,7 @@ export default {
           a2: "B 3",
           a2_check: false,
           a3: "C 3",
-          a3_check: true,
+          a3_check: false,
           a4: "D 3",
           a4_check: false,
         },
