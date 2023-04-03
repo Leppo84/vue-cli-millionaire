@@ -13,7 +13,7 @@
 export default {
   name: 'QuestionHolder',
   props: {
-    questions: Array,
+    questions: Object,
   }
 }
 </script>

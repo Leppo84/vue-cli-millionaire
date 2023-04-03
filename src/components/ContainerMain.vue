@@ -3,13 +3,14 @@
     <button :class="randomIndex==null? '' : 'd-none'" id="btn-start" class="" @click="generateRandomIndex">INIZIAMO LA SCALATA AL MILIONE!</button>
     <!-- <h1>{{ quiz[1].question }}</h1> -->
     <QuestionHolder :questions="quiz[randomIndex]"/>
-    <AnswerHolder :answers="quiz[randomIndex]"/>
+    <AnswerHolder :answers="quiz[randomIndex]" @correct-ans="generateRandomIndex" @wrong-ans="generateRandomIndex"/>
   </main>
 </template>
 
 <script>
 import QuestionHolder from './QuestionHolder.vue'
 import AnswerHolder from './AnswerHolder.vue'
+
 
 export default {
   components: { QuestionHolder, AnswerHolder },
@@ -58,7 +59,7 @@ export default {
           a2: "B 3",
           a2_check: false,
           a3: "C 3",
-          a3_check: false,
+          a3_check: true,
           a4: "D 3",
           a4_check: false,
         },
@@ -67,6 +68,7 @@ export default {
   },
   methods: {
     generateRandomIndex() {
+      console.log("New Question");
       this.randomIndex = Math.floor(Math.random() * this.quiz.length);
     },
   }
