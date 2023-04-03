@@ -4,13 +4,13 @@
       <div class="answer">
         <i class="label-left"></i>
         <p class="label">
-          {{ answers.a1 }}
+          {{"A: " + answers.a1 }}
         </p>
         <i class="label-right"></i>
         <i class="label-line"></i>
         <i class="label-left"></i>
         <p class="label">
-          {{ answers.a2 }}
+          {{"B: " + answers.a2 }}
         </p>
         <i class="label-right"></i>
       </div>
@@ -19,13 +19,13 @@
       <div class="answer">
         <i class="label-left"></i>
         <p class="label">
-          {{ answers.a3 }}
+          {{"C: " + answers.a3 }}
         </p>
         <i class="label-right"></i>
         <i class="label-line"></i>
         <i class="label-left"></i>
         <p class="label">
-          {{ answers.a4 }}
+          {{"D: " +  answers.a4 }}
         </p>
         <i class="label-right"></i>
       </div>
